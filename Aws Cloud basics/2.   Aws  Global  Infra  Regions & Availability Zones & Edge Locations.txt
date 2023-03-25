@@ -1,0 +1,48 @@
+
+# 2. Aws Global Infra :
+
++ Aws Global Infra consists of below:
+
+1. Aws Regions.
+2. Aws Availability Zones.
+3. Aws Data Centers.
+4. Aws Edge Locations / Points of Presence.
+
++ Below website to check above:
+
+https://infrastructure.aws
+
+
+## 2.1. Aws Regions:
+
++ Aws has regions all around the world.
++ Names can be us-east-1, eu-west-3.
++ A Region is a cluster of data centers.
++ Most AWS Services are region-scoped.
+
+### How to choose an Aws region :
+
++ Compliance with data governance and legal Requirements:  Data never leaves a region without your explict permission. 
++ Proximity to Customers : Reduced Latency.
++ Available Services with in a Region: new services and new features arent available in ever region.
++ Pricing: Pricing varies region to region 
+
+
+## 2.2. Aws Availability Zones:
+
++ Each region has many AZ usually 2, 3 min, max is 6.
++ Example: ap-southeast-2a, ap-southeast-2b, ap-southeast-2c
++ Each AZ is one or more dicrete data centers with redundant power,
+  networking and connectivity.
++ There seperate from each other, so that they are isolated from disasters.
++ Theyare connected with high bandwidth, ultra-low latency networking.
+
+
+## 2.3. AWS points of Presence ( Edge Locations ).
+
++ Amazon has 216 PoP ( 205 Edge Locations & || Regional Caches in 84 cities 42 countries.
++ Content is delivered to end users with lower latency.
+
+
+## 2.4.  Tour Aws Services:
+

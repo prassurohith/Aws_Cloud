@@ -1,0 +1,34 @@
+
+# 1. Aws Cloud Basics:
+
+
+##  1.1. What is Aws ?
+
++ AWS (Amazon Web Services) is a comprehensive, evolving cloud computing platform provided by Amazon that includes a mixture 
+  of infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS) and packaged-software-as-a-service (SaaS) offerings. 
++ AWS services can offer an organization tools such as compute power, database storage and content delivery services over internet.
+
+
+## 1.2. Aws Cloud History :
+
++ Initially launched in 2022.
++ Amazon Infrastructure is one of their core strength idea to market.
++ Launched publicly with SQS in 2004
++ Re-Launched publicly with SQS, S3, & EC2 in 2006.
++ Launched in Europe in 2007.
+
+### Example: Netflix, DropBox, Airbnb, Nasa.
+
+
+## Aws Cloud Use Cases :
+
++ Aws enables you to build sophisticated, scalable apps.
++ Applicable to diverse set of Industries.
++ Use Cases Include:
+
+1. Enterprise IT, Backup & Storage, Big data analytics.
+2. Website hosting, mobile & Social Apps.
+3. Gaming.
+
+
+
