@@ -1,0 +1,27 @@
+# 3. Aws Subnets:
+
+## 3.1. Vpc Subnets Ipv4 :
+
++ AWS reserves 5 ip addresses (first 4 & last 1) in each subnet.
++ These 5 ip addresses are not available for use and cant be assighned to an EC2 Instance.
++ Example: if CIDR block 10.0.0.0/24, then reserved IP addresses are:
+
+  '''
+     10.0.0.0 - Network Addresses
+	 10.0.0.1 - Reserved by Aws for vpc router.
+	 10.0.0.2 - Reserved by Aws for mapping to Amazon-provided DNS.
+	 10.0.0.3 - reserved by Aws for future use.
+	 10.0.0.255 - Network Broadcast Address. Aws does not support broadcast in a VPC, therefore the address is reserved.
+	 
+  '''
+
+## 3.2. Create Subnet:
+
+1. Open the Amazon VPC console at https://console.aws.amazon.com/vpc/.
+2. In the navigation pane, choose Subnets.
+3. Choose Create subnet.
+4. For VPC ID: Choose the VPC for the subnet.
+5. (Optional) For Subnet name, enter a name for your subnet. Doing so creates a tag with a key of Name and the value that you specify.
+6. For Availability Zone, you can choose a Zone for your subnet, or leave the default No Preference to let AWS choose one for you.
+7. For IPv4 CIDR block, enter an IPv4 CIDR block for your subnet. For example, 10.0.1.0/24. If you chose IPv6-only, this option is unavailable.
+8. Choose Create subnet.

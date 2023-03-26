@@ -1,0 +1,39 @@
+
+# 4. Internet Gateway & Route Tables:
+
+## 4.1. Internet Gateway (IGW):
+
++ Allows resources (eg.EC2 Instances) in a VPC Connect to the internet.
++ it scales horizontally and its highly available and redundant.
++ Must be created seperately from a VPC.
++ One VPC can only be attached to one IGW and vice versa.
++ Internet Gateways on their own do not allow internet accesses.
++ Route Tables must also be edited.
+
+ 
+## 4.2. Create Internet Gateway:
+
+1. Open the Amazon VPC console at https://console.aws.amazon.com/vpc/.
+2. In the navigation pane, choose Internet gateways, and then choose Create internet gateway.
+3. Optionally name your internet gateway.
+4. Optionally add or remove a tag
+5. Choose Create internet gateway.
+6. Select the internet gateway that you just created, and then choose Actions, Attach to VPC.
+7. Select your VPC from the list, and then choose Attach internet gateway.
+
+
+## 4.3. Create & Edit  Route Tables:
+
++ you can create dedicated route tables for private and public subnets or diff subnets.
++ Create Route Tables.
++ Edit Routetable for Subnet Associations.
++ Add Subnets to RouteTables.
+
+
+## 4.4. Edit Route for Above Created Route Tables:
+
++ Create one rule for 0.0.0.0/0  to IGW for Public Subnets to get internet to resources.
+
+
+
+

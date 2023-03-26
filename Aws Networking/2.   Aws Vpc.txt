@@ -1,0 +1,43 @@
+
+# 2. AWS VPC:
+
+## 2.1. Default VPC:
+
++ All new AWS Accounts have a default VPC.
++ New EC2 instances are launched into the default VPC if no subnet is specified.
++ Default VPC has internet connectivity and all EC2 intances inside it have public ipv4 addresses.
++ We also get a public and private ipv4 DNS Names.
+
+
+## 2.2. VPC :
+
++ VPC = Virtual Private Cloud.
++ You can have multiple VPC's in an AWS region ( max.5 per region - soft linit ).
++ Max. CIDR per VPC is 5, for each CIDR.
+  Min size is /28 (16 Ip addresses)
+  Max  size is /16 (65536 Ip addresses)
++ Because VPC is private only the private IPV4 ranges are allowed.
+
+1. 10.0.0.0    to  10.255.255.255.255
+2. 172.16.0.0  to  172.31.255.255  
+3. 192.168.0.0 to  192.168.255.255
+
++ Your VPC CIDR should NOT Overlap with your other networks.
+
+
+## 2.3. Create VPC:
+
+1. Open the Amazon VPC console at https://console.aws.amazon.com/vpc/.
+2. On the VPC dashboard, choose Create VPC.
+3. For Resources to create, choose VPC only.
+4. (Optional) For Name tag, enter a name for your VPC. Doing so creates a tag with a key of Name and the value that you specify.
+5. For IPv4 CIDR block, do one of the following:
+-  Choose IPv4 CIDR manual input and enter an IPv4 address range for your VPC.
+-  Choose IPAM-allocated IPv4 CIDR block, select your IPAM IPv4 address pool and a netmask. 
+   The size of the CIDR block is limited by the allocation rules on the IPAM pool.
+6. (Optional) To launch EC2 instances as Dedicated Instances, choose Tenancy, Dedicated.
+7. (Optional) To add a tag to your VPC, choose Add new tag and enter a tag key and a tag value.
+8. Choose Create VPC.
+9. After you create a VPC, you can add subnets.
+
+
